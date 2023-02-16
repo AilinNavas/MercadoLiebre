@@ -1,3 +1,23 @@
+@media (min-width: 481px) {
+    
+    a.burger-menu {
+        display: none;
+    }
+
+    main section article .descripcion-comteiner {
+        display: block;
+    }
+   main section .todos-los-productos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0px 16px;
+        justify-content: center;
+    }
+    main section .todos-los-productos article {
+        width: 48%;
+    }
+  }
+
 /* Tablet */
 @media (min-width: 768px) {
     .logo-container {
@@ -32,16 +52,62 @@
      width: 45%;
      justify-content: space-between;
 }
+
+
+.detalle-de-producto {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    width: 48%;
+}
+
+.formulario {
+    width: 50%;
+    margin: auto;
+    padding: 40px;
+}
+
+form {
+    padding: 40px;
+    margin: auto;
+    text-align: left;
+}
+
+.opcion {
+    display: inline;
+}
+.final {
+    display: flex;
+    justify-content: row;
+}
+.derechos {
+    margin: auto;
+    text-align: center;
+
+}
+
 }
 
 
 /* Desktop */
 @media (min-width: 1024px) {
-
-
-}
-
-/* TV hasta 1366 */
-@media (min-width: 1200px) {
+    main section .todos-los-productos article {
+        width: 20%;
+    }
+    .descripcion-comteiner {
+        font-size: 16px;
+        font-weight: normal;
+        height: 0;
+        opacity: 0;
+        transition: opacity 200ms ease-in-out, height 450ms ease-in-out;
+    }
+    
+    .descripcion-comteiner:hover {
+        height: 40px;
+        opacity: 1;
+        
+    }
 
 }

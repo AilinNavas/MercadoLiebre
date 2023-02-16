@@ -22,53 +22,53 @@ html {
     font-family: 'Roboto','sans-serif';
 }
 header {
-    /* border: 3px solid green; */
+    
     background-color: #EAC926;
     display: flex;
     flex-direction: column;
 }
 
 .logo-container {
-    /* border: 3px solid red; */
+    
     display: flex;
     flex-direction: column;
 
 }
 .menu-container {
-    /* border: 3px solid red; */
+    
     display: none;
     
 }
 .burger-container {
-    /* border: 3px solid red; */
+  
     display: flex;
     justify-content: center;
 
 }
 .logo-bar-container {
-    /* border: 3PX solid gray; */
+    
     display: flex;
 
 }
 .card-container{
-    /* border: 3px solid gray; */
+   
     padding: 15px;
 
 }
 .logo {
-    /* border: 3px solid pink; */
+   
     width: 50%;
     padding: 10px;
 }
 .search-button-container {
-    /* border: 3px solid pink; */
+  
     display: flex;
     width: 50%;
     justify-content: center;
     align-items: center;
 }
 .search-container {
-    /* border: 3px solid brown; */
+  
     display: flex;
     height: 25px;
     width: 90%;
@@ -108,87 +108,59 @@ button {
   background-color:  #1259c3 ;
   color: white;
 }
-/* header {
-    width: 100%;
-    font-size: 12px;
-    background-color: #EAC926; 
+
+.final {
+    margin: 15px;
+    padding-top: 40px;
     padding: 20px;
-    
-}
-div.header.superior {
-    padding-top: 20px;
-    padding-left: 20px;
-}
-h2.copy-header {
     text-align: center;
-    display:inline-block;
-    width: 80vw;
-    font-size: 16px;
-    text-align: center;
-    margin-top: 15px;
-    margin-left: 10px;
-    padding: 20px;
-
+    color: #666;
 }
 
-
-
-.fa-magnifying-glass{
-    display: inline;
+.iconos {
+    color: #1259c3;
+    margin-bottom: 10px;
+}
+div.formulario {
+    width: 80%;
+    height: 70%;
     background-color: #ebebeb;
-    border: 1px solid black;
-    padding: 3px;
-}
-
-
-.logo {
-    display: inline-block;
-    width:50%;
-    background-color: #EAC926;
-}
-.button-bar ul {
-    margin: 0;
-    padding: 0; 
-}
-.button-bar a {
-    display: inline-block;
-}
-a.burger-menu {
-    background-color: #1259c3;
-    color:white;
-    display: block;
-    max-width: 50px;
-    max-height: 50px;
-    padding: 10px 0px;
-    border-radius:5%;
-    text-align: center;
-    font-size: 2em;
-    margin: auto;
-    display: block;
-
-}
-div.burger {
-    margin: auto;
-}
-div.barra-busqueda {
-    display: inline-block;
-}
-
-nav.barra-izquierda {
-    text-decoration: none;
-    color:black;
-    display: none;
-    padding: 5px 0px;
+    font-size: 16px;
+    margin:auto;
+    padding: 20px;
     
 }
 
-nav.barra-derecha {
-    text-decoration: none;
-    color:black;
-    display: none;
-    padding: 5px 0px;
+label.titulo {
+    font-weight: bolder;
+    display: block;
+    padding: 5px;
+    font-size: 20px;
+    
+}
+input {
+    border: #666;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 5px;
+    margin: 10px;
+}
 
-} */
+button {
+    background-color: #ebebeb;
+    padding: 3px;
+    transition: all 450ms ease;
+    border: solid 1px #ebebeb;
+    border-radius:25%;
+
+}
+
+button:hover {
+  background-color: #0022AA ;
+  transform: scale(1.0);
+
+}
+ /*  */
 
 .banner {
  width:100vw;
@@ -206,11 +178,6 @@ section.ultima-visita{
  
 }
 
-/*div.articulo-completo {
-    margin:10px ;
- 
-  
-  }*/
 
 img.productos {
     width: 80%;
@@ -225,7 +192,7 @@ div.detalle-de-producto {
     border-top: solid 1px #ebebeb;
     width: 80%;
     margin: auto;
-    padding: 15px 15px 15px 15px;
+    padding: 15px 0px 15px 0px;
     text-align: left;
     line-height: 24px;
     position: relative;
@@ -236,6 +203,10 @@ div.detalle-de-producto {
 main section article:hover {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
+
+article {
+    margin-top: 20px;
+}
 p.precio {
     width: 30%;
     font-size: 18px;
@@ -244,6 +215,9 @@ p.precio {
 p.descuento {
     font-size: 16px;
     font-weight: normal;
+    width: 70%;
+    color: #39b54a;
+    display: inline;
 }
 
 .descripcion-comteiner {
@@ -251,6 +225,7 @@ p.descuento {
     font-weight: normal;
     height: 0;
     opacity: 0;
+    color: #666;
     transition: opacity 200ms ease-in-out, height 450ms ease-in-out;
 }
 
@@ -261,16 +236,14 @@ p.descuento {
 }
 
 
-.descuento {
-    display: inline;
-    width: 70%;
-}
+
 
 
 h3 {
     font-size: 24px;
     display: inline-block;
     padding: 20px;
+    color: #666;
 }
  h4.detalle{
         font-weight: bold;
@@ -299,14 +272,14 @@ section.ofertas {
     position: absolute;
     right: 20px;
     top: -15px;
-    transition: transform 350ms ease;
+    transition: transform 300ms ease;
 
 }
 
 main section article :hover .fa-truck  {
     transform: rotate(-90deg);
 }
-/*p.precio {
+p.precio {
     display: inline;
     width:30%;
     font-size: 18px;
@@ -318,8 +291,8 @@ p.descuento {
  font-size: 18px;
  color: #39b54a;
  font-weight: bolder;
- position: relative;
-}*/
+text-align: right;
+}
 
 .final {
     padding: 20px;
@@ -345,7 +318,7 @@ div.formulario {
     font-size: 16px;
     margin:auto;
     padding: 20px;
-    border: #1259c3 solid 1px;
+   
 }
 div.formulario p {
     margin: 5px 3px;
@@ -377,31 +350,4 @@ button:hover {
 
 }
 
-@media (min-width: 481px) {
-    
-    a.burger-menu {
-        display: none;
-    }
 
-    main section article .descripcion-comteiner {
-        display: block;
-    }
-   main section .todos-los-productos {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0px 16px;
-        justify-content: center;
-    }
-    main section .todos-los-productos article {
-        width: 48%;
-    }
-  }
-  
-@media (min-width: 769px) {
-    main section .todos-los-productos article {
-        width: 20%;
-    }
-
-    
-    
-  }
